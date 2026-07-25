@@ -51,3 +51,19 @@ The basic DCHP process is commonly summarizes as DORA:
 2. Offer
 3. Request 
 4. Acknowledge
+## TCP vs UDP
+TCP (Transmission Control Protocol) and UDP(User Datagram Protocol) are transport-layer protocols.
+### TCP
+TCP establishes a connection and provides reliable, ordered delivery of data. Lost data can retransmitted.
+Common uses:
+- Web browsing
+- File transfers
+- SSH
+### UDP
+UDP sends data without establishing a connection and soes not guarantee delivery or ordering. It has lower overhead and is useful low latency is more important than perfect delivery. 
+Common uses: 
+- Online gaming
+- Live audio/video
+- DNS queries
+### Key Difference
+TCP prioritizes reliability, while UDP often prioritizes speed and low latency. 
