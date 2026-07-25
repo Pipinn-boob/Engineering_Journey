@@ -11,3 +11,5 @@ This repository documents my learning in:
 - Software Development
 My goal is to become a skilled engineer by consistently building projects and learning new technologies. 
 
+## Current Focus
+Learning Git, GitHub, and building my engineering portfolio.
