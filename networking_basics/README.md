@@ -27,3 +27,8 @@ For example:
 - Network: '192.168.100.0/24'
 - Host: '107'
 Devices such as '192.168.100.25' are om the same /24 network while '192.168.101.25' is om a different network.
+## 2. MAC Addresses
+A MAC (Media Access Control) address is a link-layer address associated with a network interface.
+Example: 
+'1A-2B-3C-4D-5E'
+Unlike an IP address, which is used for logical addressing and routing, a MAC address is used for delivering frames within  the local network segment.
