@@ -67,3 +67,9 @@ Common uses:
 - DNS queries
 ### Key Difference
 TCP prioritizes reliability, while UDP often prioritizes speed and low latency. 
+### Ping
+The 'Ping' command can be used to test network reachability and measure round-trip time(RTT).
+Example:
+'Ping 8.8.8.8'
+The results show whether packets replies, packet loss, and the minimum, maximum, and average round-trip times.
+Ping uses ICMP, not TCP or UDP.
