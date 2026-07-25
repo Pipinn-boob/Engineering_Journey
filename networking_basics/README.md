@@ -32,3 +32,8 @@ A MAC (Media Access Control) address is a link-layer address associated with a n
 Example: 
 '1A-2B-3C-4D-5E'
 Unlike an IP address, which is used for logical addressing and routing, a MAC address is used for delivering frames within  the local network segment.
+## 3. DNS
+DNS (Domain Name System) translates human-readable domain names into IP addresses that computers use to communicate.
+For example:
+'google.com' ~ IP address 
+DNS makes it easier for people to access Internet services without having to remember numerical IP addresses.
