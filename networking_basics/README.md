@@ -37,3 +37,17 @@ DNS (Domain Name System) translates human-readable domain names into IP addresse
 For example:
 'google.com' ~ IP address 
 DNS makes it easier for people to access Internet services without having to remember numerical IP addresses.
+## 4. DCHP
+DCHP (Dynamic Host Configuration Portocol) automatically provides network configuration to devices when they join a network.
+It can assign:
+- IP address
+- Subnet mask
+- Default gateway
+- DNS server
+This reduces the need to manually configure every device and helps prevent configuration errors.
+### DCHP Process
+The basic DCHP process is commonly summarizes as DORA:
+1. Discover
+2. Offer
+3. Request 
+4. Acknowledge
