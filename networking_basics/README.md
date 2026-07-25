@@ -19,3 +19,11 @@ Example:
 IPv6 uses 128 bits and was introduced to provide a much larger address space than IPv4.
 Example:
 '2001:db8::1'
+### Subnet Mask
+A subnet mask determines which part of an IPv4 address represents the network and which part represents the host.
+For example: 
+- IP address: '192.168.100.107
+- Subnet mask: '255.255.255.0'
+- Network: '192.168.100.0/24'
+- Host: '107'
+Devices such as '192.168.100.25' are om the same /24 network while '192.168.101.25' is om a different network.
