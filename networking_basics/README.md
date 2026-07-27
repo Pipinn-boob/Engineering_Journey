@@ -73,3 +73,14 @@ Example:
 'Ping 8.8.8.8'
 The results show whether packets replies, packet loss, and the minimum, maximum, and average round-trip times.
 Ping uses ICMP, not TCP or UDP.
+## Traceout(tracert)
+The 'tracert' command shows the path that packets take from a computer to a destination.
+Example:
+```bash
+tracert 8.8.8.8
+```
+Each numbered line represents a hop (a router or network device that forwards the packet).
+Traceroute is useful for:
+- Identifying where delays occur.
+- Seeing the path packets take across networks.
+- Troubleshooting connectivity issues.
