@@ -93,7 +93,7 @@ Examples:
 - Wi-Fi radio signals
 - Network Interface Card(NIC)
 - Hubs
-### Key Points
+#### Key Points
 No MAC address or IP addresses are used at this layer. 
 If the physical connection fails(e.g., unplugged cable), communication can not occur.
 The NIC converts digital data into electrical, optical or radio signals and vice versa.
@@ -105,9 +105,62 @@ Examples:
 - Switch
 - ARP
 - MAC addresses
-### Key Points
+#### Key Points
 Data is transmitted as Ethernet frames.
 Switch learn MAC by observing the source MAC address of becoming of incoming frames.
 If the destination MAC address is unknown, the switch the frame to all ports except the incoming port.
 Switches forward frames based on MAC addresses.
 MAC table entries are automatically removed after a period if inactivity(MAC aging).
+### OSI Model- Layer 3(Network Layer)
+The network layer is responsible for delivering packets between different networks. It uses IP addresses to identify devices the best path to the destination.
+Example:
+- Uses IP addresses yo identify devices on different network.
+- Determined whether the detsination is on the local network or a remote network.
+- Chooses the best path for packets to travel.
+Forwards packets between different networks.
+- Uses routomg tanles to determine the next hop.
+#### Key Points
+Routers iperate at Layer 3 because they make forwarding decisions using IP addresses.
+Your PC is the first device to determine whether the destination is local or remote by comparing the destination IP with its subnet mask.
+If the destinatiom is on another netwok, your PC sends the frame to the default gateway.
+Before sending the framem ARP is used(if necessary) to obtain the MAC address of the default gateway.
+The router removes the ethernet frame, reads the IP packet, and forwards it to the next network.
+### OSI Model- Layer 4(Transport Layer)
+It is responsible for end-to-end communication between devices. It ensures that data is delivered reliably when required and divides large amounts of data into smaller segments for transmission.
+Protocols:
+- TCP
+- UDP
+Functions:
+- Segments large data into small pieces.
+- Reassembles data at the receiving device.
+- Provides reliable or fast data transmission.
+- Detects lost segmenys and retransmits them(TCP)
+- Ensures rata arrives in the correct order.(TCP)
+#### TCP
+Characteristics:
+- Connection-oriented.
+- Reliable.
+- Acknowledges received data.
+- Retransmits lost segments.
+- Ensures data arrives in order.
+Examples 
+- File downloads
+- Web browsing(HTTP/HTTPS)
+- Emails
+- Messaging applications
+#### UDP
+Characteristics:
+- Connectionless.
+- Faster than TCP.
+- Does not retransmit lost data.
+- No guarantee of delivery or order.
+Examples:
+- Live video streaming
+- Voice calls
+- Online gaming
+- Video conferencing
+##### Key Points
+TCP prioritizes reliability over speed.
+UDP prioritizes speed over reliabilty.
+Large files are divided into smaller segments before transmission.
+TCP only retransmits the missing segments instead of restarting the entire transfer.
