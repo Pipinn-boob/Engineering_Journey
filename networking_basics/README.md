@@ -164,3 +164,56 @@ TCP prioritizes reliability over speed.
 UDP prioritizes speed over reliabilty.
 Large files are divided into smaller segments before transmission.
 TCP only retransmits the missing segments instead of restarting the entire transfer.
+### OSI Model Layer 5(Session Layer)
+The session layer is responsible for establishing, managing and terminating communication sessions between applications.
+Functions:
+- Establishes communication sessions.
+- Maintains active communication betwen devices.
+- Terminates communication between applications.
+- Helps recover interrupted sessions when possible.
+Examples:
+- Video conferencing(Zoom, Microsoft Teams)
+- Remote desktop sessions
+- Database connections
+#### Key Points
+Responsible for the beginning, maintenance and end of a communcation session.
+Keeps communication organized between two applications.
+Manages long-running communcation such as video calls or large file transfers.
+### OSI Model Layer 6(Presentation Layer)
+It is responsible for formatting, translating, encrypting, decrypting, compressing and decompressing data so that it can be correctly understood by the receiving device.
+Functions:
+- Encrypts data before transmission.
+- Decrpts received data.
+- Compresses data to reduce its size.
+- Decompresses received data.
+- Translates data into a format understood by the receiving application.
+Examples:
+- SSL/TLS encryption
+- HTTPS encryption
+- JPEG image compression
+- MP3 audio compression
+- MPEG video compression
+### OSI Model Layer 7(Application Layer)
+It is the closest layer to the user and provides network services that allow applications to communicate over a network.
+Protocols:
+- HTTP(HyperText Transfer Protocol)
+- HTTPS(HTTP Secure)
+- DNS(Domain Name System)
+- DHCP(Dynamic Host Configuration Protocol)
+- FTP(File Transfer Protocol)
+- SMTP(Simple Mail Transfer Protocol)
+Functions:
+- Provides network services to applications.
+- Allows users to access network resources.
+- Handles communication between software applications.
+- Provides services such as web browsing, email, file transfer and name resolution.
+Examples:
+- Opening a website using HTTPS.
+- Sending an email using SMTP.
+-  Resolving a domain name using DNS.
+- Automatically receiving an IP address using DHCP.
+#### Key Points
+The application layer does not move packets or choose routes.
+It provides services that application use to communication. 
+Protocols like DNS,HTTP,DHCP operate at this layer.
+Lower layers handle the actual transmission of data.
