@@ -51,7 +51,7 @@ The basic DCHP process is commonly summarizes as DORA:
 2. Offer
 3. Request 
 4. Acknowledge
-## TCP vs UDP
+## 5. TCP vs UDP
 TCP (Transmission Control Protocol) and UDP(User Datagram Protocol) are transport-layer protocols.
 ### TCP
 TCP establishes a connection and provides reliable, ordered delivery of data. Lost data can retransmitted.
@@ -73,7 +73,7 @@ Example:
 'Ping 8.8.8.8'
 The results show whether packets replies, packet loss, and the minimum, maximum, and average round-trip times.
 Ping uses ICMP, not TCP or UDP.
-## Traceout(tracert)
+## 6.Traceout(tracert)
 The 'tracert' command shows the path that packets take from a computer to a destination.
 Example:
 ```bash
@@ -84,3 +84,30 @@ Traceroute is useful for:
 - Identifying where delays occur.
 - Seeing the path packets take across networks.
 - Troubleshooting connectivity issues.
+## 7. OSI Model
+### OSI Model Layer 1(Physical Layer)
+It is responsible for transmitting raw bits(0s and1s) and defines how data travels through physical medium.
+Examples:
+- Ethernet cables
+- Fibre optic cables
+- Wi-Fi radio signals
+- Network Interface Card(NIC)
+- Hubs
+### Key Points
+No MAC address or IP addresses are used at this layer. 
+If the physical connection fails(e.g., unplugged cable), communication can not occur.
+The NIC converts digital data into electrical, optical or radio signals and vice versa.
+### OSI Model- Layer 2(Data Link Layer)
+It provides communication between devices on the same local network(LAN).
+Uses MAC addresses to identify devices.
+Examples:
+- Ethernet
+- Switch
+- ARP
+- MAC addresses
+### Key Points
+Data is transmitted as Ethernet frames.
+Switch learn MAC by observing the source MAC address of becoming of incoming frames.
+If the destination MAC address is unknown, the switch the frame to all ports except the incoming port.
+Switches forward frames based on MAC addresses.
+MAC table entries are automatically removed after a period if inactivity(MAC aging).
