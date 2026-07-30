@@ -265,3 +265,16 @@ It is the model used by the internet.
 The OSI model has 7 layers and is mainly used as a reference model.
 The TCP/IP Application layer combines the OSI Application, Presentation, and Session layers.
 The TCP/IP Network Access Layer combine the OSI Data Link and Physical Layers.
+# 9. Ports
+Ports are logical communication endpints that allow multiple applictaions on the same device to communicate multiple applications on the same device over a network simoultaneously.
+## Functions
+- Identify the destination application on a device.
+- Allow Multiple network appllications to run at the same time.
+- Work together with IP addresses to deliver data to the correct appliication.
+## Key Points
+An IP address identifies a device running on the network.
+A port number identifies an application or service running on that network.
+The oprating system reads the destination port and delivers the data to the correct aaplication.
+Switches use MAC addresses.
+Routers use IP addresses.
+Operating systems use port numbers.
