@@ -265,16 +265,36 @@ It is the model used by the internet.
 The OSI model has 7 layers and is mainly used as a reference model.
 The TCP/IP Application layer combines the OSI Application, Presentation, and Session layers.
 The TCP/IP Network Access Layer combine the OSI Data Link and Physical Layers.
-# 9. Ports
+## 9. Ports
 Ports are logical communication endpints that allow multiple applictaions on the same device to communicate multiple applications on the same device over a network simoultaneously.
-## Functions
+### Functions
 - Identify the destination application on a device.
 - Allow Multiple network appllications to run at the same time.
 - Work together with IP addresses to deliver data to the correct appliication.
-## Key Points
+### Key Points
 An IP address identifies a device running on the network.
 A port number identifies an application or service running on that network.
 The oprating system reads the destination port and delivers the data to the correct aaplication.
 Switches use MAC addresses.
 Routers use IP addresses.
 Operating systems use port numbers.
+## 10. Network Address Translation
+Network Address Translation(NAT) is the process by which a router translates private IP addresses into a public IP addresses when accessing the internet. 
+### Functions
+- Translates private IP addresses into public IP addresses.
+- Allows multiple devices to share one IP address.
+Conserves public IPv4 addresses.
+- Maintains a NAT table to keep track of active connections.
+- Translates incoming packets back to the correct private device.
+### Key Points
+Devices inside a local network use private IP addresses.
+The internet only ees the router's public IP address.
+The router replaces the private source IP with its public IP before sending the packets to the internet.
+The router uses a NAT table to determine which internal device should receive returning packets.
+NAT helps conserbe the limited number of available IPv4 public addresses.
+### Example
+A laptop with the private IP addresses 192.168.100.107 sends a request to Google.
+Before NAT:
+Source IP:192.168.100.107
+After NAT:
+Source IP: 102.45.18.73Google responds to the router's public IP address, and the router uses its NAT table to forward the response to the correct device on the local network.
