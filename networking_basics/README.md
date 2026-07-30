@@ -217,3 +217,51 @@ The application layer does not move packets or choose routes.
 It provides services that application use to communication. 
 Protocols like DNS,HTTP,DHCP operate at this layer.
 Lower layers handle the actual transmission of data.
+## 8. TCP/IP
+The TCP/IP is the networking model used on the internet. It groups networking functions into four layers.
+
+Layers:
+1. Appllication
+2. Transport
+3. Internet
+4. Network Access
+### Layer responsibilities
+#### Application Layer
+Provides networking services to applications.
+Combines the OSI Application, Presentation, and Session layers.
+Examples:
+- HTTP
+- HTTPS
+- DNS
+- DHCP
+- FTP
+- SMTP
+#### Transport Layer
+Provides end-to-end communication.
+Segments and reassembles data.
+Ensures reliable or fast transmission.
+Protocols:
+- TCP
+- UDP
+#### Internet Layer
+Uses IP addresses.
+Routes packets between different networks.
+Determines the best path for packets.
+Protocols:
+- IP
+- ICMP
+#### Network Access Layer
+Handles communication on the local network.
+Uses MAC addresses.
+Transmits bits through the physical medium.
+Examples:
+- Ethernet
+- Wi-Fi
+- Switches
+- NICs
+### Key Points
+The TCP/IP model has 4 layers.
+It is the model used by the internet. 
+The OSI model has 7 layers and is mainly used as a reference model.
+The TCP/IP Application layer combines the OSI Application, Presentation, and Session layers.
+The TCP/IP Network Access Layer combine the OSI Data Link and Physical Layers.
