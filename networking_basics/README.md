@@ -298,25 +298,69 @@ Before NAT:
 Source IP:192.168.100.107
 After NAT:
 Source IP: 102.45.18.73Google responds to the router's public IP address, and the router uses its NAT table to forward the response to the correct device on the local network.
-### Private and Public IP Addresses
+## 11. Private and Public IP Addresses
 IP addresses are divided into private and public addresses based on where they are used.
-#### Private IP Addresses
+### Private IP Addresses
 Private IP addresses are used inside local networks and are not routable on the Internet.
 Private IPv4 ranges:
 - 10.0.0.0 - 10.255.255.255
 - 172.16.0.0 - 172.31.255.255
 192.168.0.0 - 192.168.255.255
-#### Public IP addresses
+### Public IP addresses
 Public IP addresses are globally unique and are assigned by Internet Service Providers(ISPS)
 They allow communication over the Internet.
-#### Key Differences
+### Key Differences
 | Private IP | Public IP |
 | -----------|-----------|
 | Used inside local networks | Used on the Internet |
 | Cannot be reached directly from the Internet | Can be reached over the Internet |
 | Reused by many different networks | Globally unique |
 | Works together with NAT | Assigned by an ISP |
-#### Key Points
+### Key Points
 - Devices inside a LAN use private IP addresses.
 - Routers use NAT to translate private IP addresses into a public IP address.
 - Multiple devices can share can share one public IP address through NAT.
+## 12. Dynamic Host Configuration Protocol
+Dynamic Hist Cofiguration Protocol (DHCP) is a network protocol that automatically assigns network configuration information to devices joining a network.
+### Functions
+- Assigns IP addresses automatically.
+- Assigns subnet masks.
+- Provides the default gateway address.
+- Provides DNS server addresses.
+- Prevents IP address conflicts.
+#### Key Points
+- A DHCP server automatically configure devices on a network.
+- In most home networks, the router acts as the DHCP server.
+- Devices request an IP address when they connect to the network.
+- DHCP reduces manual configuration and minimizes configuration errors.
+### Information Provided by DHCP
+- IP address
+- Subnet Mask
+- Default Gateway
+- DNS Server Address
+#### Benefits
+Automatic network configuration.
+Prevents duplicate IP addresses.
+Simplifies network network administration.
+Allows devices to join the network quickly.
+### DHCP DORA Process
+The DHCP process follows four steps, commonly remembered as DORA.
+#### 1. Discover
+The client broadcasts a DHCP Discover message to locate a DHCP server.
+#### 2. Offer
+The DHCP server offers an available IP address and other network configuration information.
+#### 3. Request
+The client requests to use the offered IP address.
+#### Acknowledge
+The DHCP server confirms the assignment and provides:
+- IP Address
+- Subnet Mask
+- Default Gateway
+- DNS Server
+### DHCP Lease
+A DHCP lease is the amount of time a device is allowed to use an assigned IP address.
+#### Key Points
+- DHCP assigns IP addresses for a limited period called a lease.
+- A device usually keeps getting the same IP address while the lease is valid.
+- When reconnecting to the same network before the lease expires, the device will usually receive the same IP address.
+- After the lease expires, the DHCP server may assign the IP address to another device.
