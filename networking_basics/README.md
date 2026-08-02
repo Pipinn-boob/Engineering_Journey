@@ -298,3 +298,25 @@ Before NAT:
 Source IP:192.168.100.107
 After NAT:
 Source IP: 102.45.18.73Google responds to the router's public IP address, and the router uses its NAT table to forward the response to the correct device on the local network.
+### Private and Public IP Addresses
+IP addresses are divided into private and public addresses based on where they are used.
+#### Private IP Addresses
+Private IP addresses are used inside local networks and are not routable on the Internet.
+Private IPv4 ranges:
+- 10.0.0.0 - 10.255.255.255
+- 172.16.0.0 - 172.31.255.255
+192.168.0.0 - 192.168.255.255
+#### Public IP addresses
+Public IP addresses are globally unique and are assigned by Internet Service Providers(ISPS)
+They allow communication over the Internet.
+#### Key Differences
+| Private IP | Public IP |
+| -----------|-----------|
+| Used inside local networks | Used on the Internet |
+| Cannot be reached directly from the Internet | Can be reached over the Internet |
+| Reused by many different networks | Globally unique |
+| Works together with NAT | Assigned by an ISP |
+#### Key Points
+- Devices inside a LAN use private IP addresses.
+- Routers use NAT to translate private IP addresses into a public IP address.
+- Multiple devices can share can share one public IP address through NAT.
