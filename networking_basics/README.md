@@ -364,3 +364,9 @@ A DHCP lease is the amount of time a device is allowed to use an assigned IP add
 - A device usually keeps getting the same IP address while the lease is valid.
 - When reconnecting to the same network before the lease expires, the device will usually receive the same IP address.
 - After the lease expires, the DHCP server may assign the IP address to another device.
+## 13. NAT and Security
+Nat only forwards incoming packets if the match an existing entry on the NAT table.
+Packets that do not match any entry on the NAT table are dropped.
+This prevents most unsolicited connections from reaching devices on the local network.
+NAT provides a basic level of protection, but it is not a replacement for a firewall.
+A firewall applies security rules to determine whether traffic should be allowed or blocked.
