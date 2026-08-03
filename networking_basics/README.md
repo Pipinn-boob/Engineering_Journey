@@ -370,3 +370,16 @@ Packets that do not match any entry on the NAT table are dropped.
 This prevents most unsolicited connections from reaching devices on the local network.
 NAT provides a basic level of protection, but it is not a replacement for a firewall.
 A firewall applies security rules to determine whether traffic should be allowed or blocked.
+## 14. Firewalls
+A firewall is a security system that monitors and controls incoming and outgoing network traffic according to predefined rules.
+### Functions
+- Allows legitimate traffic.
+- Blocks unauthorized traffic.
+- Protects device from unsolicited connections.
+- Works together with NAT to improve network security.
+### Key Points
+Knowing a router public IP address does not automatically allow access to devices inside the network.
+NAT forwards only traffic that matches an existing NAT table entry.
+A firewall applies rules to determine whether traffic should be allowed or blocked.
+Outbound connections initiated by devices inside the networks are generally allowed and their replies are permitted.
+Unsolicited inbound connections are typically blocked unless explicitly allowed( for example, through port forwadding or firewall rules)
