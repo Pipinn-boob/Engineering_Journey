@@ -383,3 +383,30 @@ NAT forwards only traffic that matches an existing NAT table entry.
 A firewall applies rules to determine whether traffic should be allowed or blocked.
 Outbound connections initiated by devices inside the networks are generally allowed and their replies are permitted.
 Unsolicited inbound connections are typically blocked unless explicitly allowed( for example, through port forwadding or firewall rules)
+## 15. Port Forwarding
+Port forwading is a router feature that directs incoming traffic on a specific port to a specific device on the local network.
+### Functions
+- Allows external de3vices to access services hosted inside a private network.
+- Works together with NAT to direct incoming traffic.
+- Enables hosting of websites, game servers, security cameras, and other network services.
+### Key Points
+- Without port forwarding, unsolicited incoming traffic is usually dropped.
+- A port forwarding rule tells the router which private IP addresses should receive traffic arriving on a specific port.
+- After the internal device responds, NAT tracks the ongoing connection.
+### Example
+| Public Port | Forward to |
+|-------------|------------|
+| 80 (HTTP) | 192.168.100.107:80 |
+| 443 (HTTPS) | 192.168.100.107:443 |
+| 25565 (Minecraft) | 192.168.100.107:25565|
+### Port Forwarding with Multiple Devices
+A router cannot normally forward the same public IP and public port combination to two different internal devices because the destination would be ambiguous. 
+Different external ports can be used to reach different internal devices.
+#### Example
+Public Port 80
+      ↓
+192.168.100.107:80
+
+Public Port 8080
+      ↓
+192.168.100.120:80
