@@ -410,3 +410,11 @@ Public Port 80
 Public Port 8080
       ↓
 192.168.100.120:80
+### External And Internal Ports
+A port forwarding rule can map an external/ public port to a different internal/ external port.
+Public IP:8080
+      ↓
+Router
+      ↓
+192.168.100.120:80
+The external port identifies the incoming connection, while the internal port identifies the service on the destination device.
