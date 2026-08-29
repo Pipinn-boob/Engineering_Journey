@@ -418,3 +418,19 @@ Router
       ↓
 192.168.100.120:80
 The external port identifies the incoming connection, while the internal port identifies the service on the destination device.
+### Port Forwarding and Unsolicited Traffic
+Without a port-forwarding rule, an unsolicited incoming connection normally has no internal destination.
+For example:
+
+Public:2222
+     ↓
+Router
+     ↓
+❌ No forwarding rule
+     ↓
+Packet dropped
+A configured rule provides the destination:
+
+Public:2222
+     ↓
+192.168.100.120:22
