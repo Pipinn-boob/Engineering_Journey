@@ -1,0 +1,8 @@
+{
+  "config": {
+    // These notes are prose: long lines are fine.
+    "MD013": false,
+    // Headings like "Key Points" and "Example" may repeat under different parents.
+    "MD024": { "siblings_only": true }
+  }
+}

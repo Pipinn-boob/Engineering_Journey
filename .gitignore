@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.idea/
+*.swp
+
+# Virtual machines and large lab artifacts - never commit these
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+*.qcow2
+
+# Packet captures (*.pcap / *.pcapng) may be committed, but keep them
+# under ~5 MB - see labs/README.md for the lab conventions.
