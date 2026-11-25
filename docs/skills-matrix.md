@@ -10,7 +10,7 @@ this repository, and the matrix is updated at the end of each
 | Technical writing | notes with a table of contents, cross-links and CI-enforced spelling | Beginner–Intermediate | publish the notes as a MkDocs site |
 | Python | [subnet-calculator](../projects/subnet-calculator/README.md) — CLI + pytest + CI | Beginner | weekly exercises; USSD service project |
 | Git & GitHub | branch workflow, pull requests, Actions CI in this repo | Beginner | git notes; first open-source contribution |
-| Linux | — | Not started | `notes/linux_basics/` from December 2026 |
+| Linux | [linux notes](../notes/linux_basics/README.md) — permissions, processes, networking commands with live experiment output | Beginner | practice checklist on WSL2; systemd and package management on a real VM |
 | Cybersecurity | notes §13–14 (NAT, firewalls) | Awareness | NetAcad Introduction to Cybersecurity |
 | Network automation | — | Not started | Netmiko config-backup tool (Q1 2027) |
 | Cloud | — | Not started | AWS free tier after CCNA (optional) |

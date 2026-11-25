@@ -2,6 +2,8 @@
 
 Welcome to my Engineering Journey.
 
+These notes are also published as a documentation site: [pipinn-boob.github.io/Engineering_Journey](https://pipinn-boob.github.io/Engineering_Journey/).
+
 ## About Me
 
 I'm Crispin Ngande, a Telecommunications and IT student.
@@ -24,7 +26,7 @@ My goal is to become a skilled engineer by consistently building projects and le
 | Networking | 🚧 In progress | [networking_basics](networking_basics/README.md) — IP addressing, MAC addresses, DNS, DHCP, TCP/UDP, networking commands, the OSI and TCP/IP models, ports, NAT, firewalls, port forwarding, and VPN basics |
 | Python | 🚧 In progress | [subnet-calculator](projects/subnet-calculator/README.md) is the first Python project |
 | Git & GitHub | 🚧 In progress | This repository is the first exercise |
-| Linux | Planned | Starts December 2026 — see the [90-day plan](docs/90-day-plan.md) |
+| Linux | 🚧 In progress | [linux_basics](notes/linux_basics/README.md) — shell, filesystem, users and permissions, processes, pipes, networking commands — all demonstrated with live command output |
 | Cybersecurity | Planned | Starts with the free Cisco NetAcad course — see [certifications](certifications/README.md) |
 | Software Development | Planned | Grows with each project below |
 
