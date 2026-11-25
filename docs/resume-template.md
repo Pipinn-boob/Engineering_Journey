@@ -7,9 +7,9 @@ repository is the proof layer behind every claim.
 
 ---
 
-[FULL NAME]
+Crispin Ngande Murimi
 
-Thika, Kenya · [email] · [LinkedIn URL] · [GitHub URL]
+Thika, Kenya · [crispinngande@gmail.com](mailto:crispinngande@gmail.com) · [LinkedIn](https://www.linkedin.com/in/crispin-ngande-14891630b/) · [github.com/Pipinn-boob](https://github.com/Pipinn-boob)
 
 ## Professional Summary
 
@@ -20,13 +20,13 @@ per application to mirror the job advert.]
 
 ## Education
 
-**BSc Telecommunications and Information Technology** — [University], Kenya
+**BSc Telecommunications and Information Technology** — Kenyatta University, Kenya
 
-Expected [Month Year] · Relevant coursework: [list]
+Expected [Month Year] · Relevant coursework: Transmission Lines, Electrodynamics, Computer Architecture, Programming, Calculus, Mechanics
 
 ## Projects
 
-**Subnet Calculator CLI** — Python · pytest · GitHub Actions · [repo link]
+**Subnet Calculator CLI** — Python · pytest · GitHub Actions · [Engineering_Journey repo](https://github.com/Pipinn-boob/Engineering_Journey)
 
 - Command-line tool that computes the network address, broadcast, usable
   host range and RFC 1918 scope for any IPv4/IPv6 subnet

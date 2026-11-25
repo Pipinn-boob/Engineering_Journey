@@ -24,7 +24,7 @@ Networking fundamentals (CCNA path) · Linux · Python · Cybersecurity basics
 
 ## Contact
 
-- LinkedIn: [add link]
+- LinkedIn: [crispin-ngande](https://www.linkedin.com/in/crispin-ngande-14891630b/)
 - Email: crispinngande@gmail.com
 ```
 
