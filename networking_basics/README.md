@@ -32,6 +32,7 @@ Learn and document fundamental networking concepts through practical exercises a
 13. [NAT and Security](#13-nat-and-security)
 14. [Firewalls](#14-firewalls)
 15. [Port Forwarding](#15-port-forwarding)
+16. [VPN (Virtual Private Network)](#16-vpn-virtual-private-network)
 
 ## 1. IP Addresses
 
@@ -713,3 +714,73 @@ Public:2222
       ↓
 192.168.100.120:22
 ```
+
+## 16. VPN (Virtual Private Network)
+
+A VPN creates an encrypted tunnel between a device and a VPN server.
+
+**Without a VPN:**
+
+```text
+Laptop → Router/NAT → ISP → Internet → Website
+```
+
+**With a VPN:**
+
+```text
+Laptop → Router/NAT → VPN Server → Internet → Website
+```
+
+The VPN server then forwards the traffic to the destination website.
+
+### 16.1 Functions of a VPN
+
+- Encrypts traffic between the device and the VPN server.
+- Prevents the local network from seeing the contents of the VPN tunnel.
+- Prevents the ISP from seeing the contents of the VPN tunnel.
+- Makes the VPN server's public IP appear as the source of Internet traffic to websites.
+
+### 16.2 VPN and IP Addresses
+
+Example:
+
+| Device | IP Address |
+| ------ | ---------- |
+| Laptop | `192.168.1.20` |
+| Router public IP | `203.0.113.50` |
+| VPN server | A public IP assigned to the VPN server |
+
+When connected to the VPN, a website generally sees the **VPN server's public IP**, not the router's public IP.
+
+---
+
+### 16.3 VPN Kill Switch
+
+A VPN kill switch blocks Internet traffic if the VPN connection unexpectedly disconnects. This prevents traffic from automatically falling back to the normal Internet connection.
+
+#### Example
+
+```text
+VPN connected:
+Laptop → 🔒 VPN tunnel → VPN Server → Internet
+
+VPN disconnected:
+Laptop → ❌ Internet traffic blocked
+```
+
+---
+
+### 16.4 Important Limitation
+
+A VPN does not provide complete anonymity. The VPN provider can potentially see or log certain information about the connection, depending on the provider, VPN protocol, and configuration.
+
+---
+
+### 16.5 Key Points
+
+- VPN = Virtual Private Network.
+- The device creates an encrypted tunnel to a VPN server.
+- The ISP can generally see the VPN connection but not the contents of the encrypted tunnel.
+- Websites generally see the VPN server's public IP.
+- A VPN kill switch can block traffic when the VPN disconnects.
+- A VPN does not make a user completely anonymous.

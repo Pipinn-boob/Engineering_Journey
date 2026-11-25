@@ -21,7 +21,7 @@ My goal is to become a skilled engineer by consistently building projects and le
 
 | Area | Status | Notes |
 | ---- | ------ | ----- |
-| Networking | 🚧 In progress | [networking_basics](networking_basics/README.md) — IP addressing, MAC addresses, DNS, DHCP, TCP/UDP, networking commands, the OSI and TCP/IP models, ports, NAT, firewalls, and port forwarding |
+| Networking | 🚧 In progress | [networking_basics](networking_basics/README.md) — IP addressing, MAC addresses, DNS, DHCP, TCP/UDP, networking commands, the OSI and TCP/IP models, ports, NAT, firewalls, port forwarding, and VPN basics |
 | Python | 🚧 In progress | [subnet-calculator](projects/subnet-calculator/README.md) is the first Python project |
 | Git & GitHub | 🚧 In progress | This repository is the first exercise |
 | Linux | Planned | Starts December 2026 — see the [90-day plan](docs/90-day-plan.md) |
