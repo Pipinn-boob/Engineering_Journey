@@ -31,12 +31,18 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Build site (strict — fails on warnings such as broken links)
-        run: mkdocs build --strict -f .github/mkdocs.yml --site-dir site
+        # Build OUTSIDE the docs directory (the repo root): a site_dir inside
+        # docs_dir is a hard MkDocs error. Runner temp is safe for the build;
+        # the result is then copied into the workspace for the upload action.
+        run: mkdocs build --strict -f .github/mkdocs.yml --site-dir "$RUNNER_TEMP/site"
+
+      - name: Copy built site into the workspace for upload
+        run: cp -r "$RUNNER_TEMP/site" "$GITHUB_WORKSPACE/_site"
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
   deploy:
     name: Deploy to GitHub Pages

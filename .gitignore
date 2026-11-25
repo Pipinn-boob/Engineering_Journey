@@ -26,3 +26,5 @@ desktop.ini
 
 # MkDocs local build output
 site/
+# MkDocs CI staging copy
+_site/
