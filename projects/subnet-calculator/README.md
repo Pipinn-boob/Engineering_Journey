@@ -1,7 +1,7 @@
 # subnet-calculator
 
 A small command-line subnet calculator — Project #1 of the
-[Engineering Journey](../../README.md).
+[Engineering Journey](../../index.md).
 
 It answers, for any IPv4 or IPv6 subnet, the questions posed in
 [section 1](../../networking_basics/README.md#1-ip-addresses) and

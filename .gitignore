@@ -23,3 +23,6 @@ desktop.ini
 
 # Packet captures (*.pcap / *.pcapng) may be committed, but keep them
 # under ~5 MB - see labs/README.md for the lab conventions.
+
+# MkDocs local build output
+site/

@@ -2,6 +2,8 @@
 
 Welcome to my Engineering Journey.
 
+These notes are also published as a documentation site: [pipinn-boob.github.io/Engineering_Journey](https://pipinn-boob.github.io/Engineering_Journey/).
+
 ## About Me
 
 I'm Crispin Ngande, a Telecommunications and IT student.

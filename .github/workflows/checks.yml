@@ -15,6 +15,7 @@ jobs:
         with:
           check_filenames: true
           check_hidden: true
+          skip: ./.git/*
 
   markdown:
     name: Markdown lint (markdownlint-cli2)
