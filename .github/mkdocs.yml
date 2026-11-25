@@ -16,8 +16,11 @@ repo_name: Pipinn-boob/Engineering_Journey
 edit_uri: edit/main/
 
 # The repository root is the docs source; hide build internals from the site.
+# site_dir is resolved relative to this config file, so ../../site lands
+# OUTSIDE the repository (inside-site_dir is a hard MkDocs error). CI builds
+# to a runner temp directory instead — see .github/workflows/docs.yml.
 docs_dir: ..
-site_dir: ../site
+site_dir: ../../site
 
 exclude_docs: |
   /mkdocs.yml
